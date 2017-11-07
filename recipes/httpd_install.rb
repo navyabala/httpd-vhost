@@ -18,7 +18,7 @@ web_app 'shop' do
 	server_name 'tryenbd'
 	server_aliases ['tryenbd']
 	docroot '/var/www/shop'
-	cookbook 'apache2'
+	cookbook 'httpd'
 end
 
 # create dummy content
