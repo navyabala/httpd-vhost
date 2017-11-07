@@ -1,0 +1,10 @@
+DEPENDENCIES
+  hostsfile (~> 2.4.5)
+  httpd
+    path: .
+    metadata: true
+
+GRAPH
+  hostsfile (2.4.5)
+  httpd (0.1.0)
+    hostsfile (= 2.4.5)
