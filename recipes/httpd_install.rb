@@ -1,6 +1,6 @@
 # add hosts entry
 hostsfile_entry '127.0.0.1' do
-	hostname  'tryenbd'
+	hostname  'localhost.localdomain'
 	action    :create
 end
 
@@ -15,10 +15,10 @@ end
 
 # create virtual host
 web_app 'shop' do
-	server_name 'tryenbd'
-	server_aliases ['tryenbd']
+	server_name 'localhost.localdomain'
+	server_aliases ['localhost.localdomain']
 	docroot '/var/www/shop'
-	cookbook 'httpd'
+	cookbook 'apache2'
 end
 
 # create dummy content

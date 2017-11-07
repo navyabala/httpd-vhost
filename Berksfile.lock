@@ -1,10 +1,19 @@
 DEPENDENCIES
+  apache2 (~> 3.0.0)
   hostsfile (~> 2.4.5)
   httpd
     path: .
     metadata: true
+  iptables (~> 4.3.1)
+  logrotate (~> 2.2.0)
 
 GRAPH
+  apache2 (3.0.0)
+    iptables (>= 0.0.0)
+    logrotate (>= 0.0.0)
   hostsfile (2.4.5)
   httpd (0.1.0)
+    apache2 (= 3.0.0)
     hostsfile (= 2.4.5)
+  iptables (4.3.1)
+  logrotate (2.2.0)
